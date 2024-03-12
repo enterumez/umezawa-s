@@ -114,21 +114,6 @@ ul, li {
   color: #fff;
 }
 
-.nav_menu {
-  display: flex;
-  padding: 10px;
-  position: fixed;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.nav_menu_item {
-  margin-left: 20px;
-  position: fixed;
-  justify-content: space-between;
-  width: 100%;
-}
-
 /*--------------------------------
 　グローバルナビ
 ---------------------------------*/
