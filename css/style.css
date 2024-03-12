@@ -114,6 +114,15 @@ ul, li {
   color: #fff;
 }
 
+.nav_menu {
+  display: flex;
+  padding: 10px;
+}
+
+.nav_menu_item {
+  margin-left: 20px;
+}
+
 /*--------------------------------
 　グローバルナビ
 ---------------------------------*/
