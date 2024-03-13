@@ -23,15 +23,19 @@
   
 </head>
   <style>
-    .slanted-text {
-      transform: rotate(-10deg); /* 斜めに傾ける角度を調整 */
-      display: inline-block; /* テキストのみにスタイルを適用 */
-    }
-
     .field {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: center;
     }
+    
+.child {
+  margin-right: 50px; /* 右側のマージンを50pxに設定 */
+}
+
+/* 最後の子要素にはマージンを適用しないため、margin-rightを0に設定 */
+.child:last-child {
+  margin-right: 0;
+}
   </style>
 <body>
   <div id="wrapper">
@@ -44,10 +48,7 @@
     <nav id="gnav">
       <ul>
         <li><i class="fas fa-user fa-lg"><a href="#Profile">PROFILE</a></i></li>
-        <li><i class="fa-regular fa-comment"><a href="#policy">POLICY</a></i></li>
-        <li><i class="fa-regular fa-compass"><a href="#now/next">NOW/NEXT</a></i></li>
         <li><i class="fa-solid fa-computer"><a href="#skill">SKILL</a></i></li>
-        <li><i class="fa-solid fa-link"><a href="#output">OUTPUT</a></i></li>
         <li><i class="fas fa-tasks fa-lg"><a href="#works">WORKS</a></i></li>
         <li><i class="fas fa-envelope fa-lg"><a href="#contact">CONTACT</a></i></li>
       </ul>
@@ -60,7 +61,7 @@
             <h2 class="section-title"><i class="fas fa-user"><span class="section-title-css">PROFILE</span></i></h2>
           </div>
           <div class="field">
-            <div class="profile"><img src="img/profile/プロフィール.jpg" width=250px></div>
+            <div><img src="img/profile/プロフィール.jpg" width=450px></div>
             <div>NAME：Umezawa Shuta<br>BIRTH：1994<br><br>2017-2020 株式会社イー・トラックス<br>2020-2022 株式会社セブン-イレブン・ジャパン<br>2022-現在  株式会社NGK<br><br>略歴：<br>フットサルプレーヤーとして活動するため、20歳時にイタリアへと渡り1年間活動したのち、<br>大阪、仙台で活動後、23歳時に引退。<br>パソコン教室の教室責任者からキャリアをスタートさせ、コンビニ専門の経営コンサルタントを経て、<br>社内SEとしての現在にいたる。</div>
           </div>
         <br><br>
@@ -72,7 +73,7 @@
         </div>
         <br>
         <div class="field">
-            <div><img src="img/skill/3つの円のベン図 (1).png" width=400px></div>
+            <div><img src="img/skill/3つの円のベン図 (1).png" width=450px></div>
             <div>課題解決に必要な要素として、<br>「ビジネススキル」<br>「ITスキル（ドメインスキル）」<br>「ヒューマンスキル」の3つのスキルが重要であると考えている。<br><br>プロジェクトマネージャーは、3つのスキル全てがあることが望ましいが、<br>優先順位をつけるなら<br>「ヒューマンスキル」<br>＞「ビジネススキル」<br>＞「ITスキル（ドメインスキル）」<br>の順番で、それぞれのスキルが求められる役割だと考えている。</div>
             </div>
           </div>
@@ -345,7 +346,7 @@
                 <figcaption class="card-caption">
                   <p class="card-caption-title">kintone 運用改善</p>
                   <p class="card-caption-info">業務効率改善</p>
-                  <p class="card-caption-info">・要求整理</p>
+                  <p>・要求整理</p>
                   <p class="card-caption-info">・要件定義</p>
                   <p class="card-caption-info">・要件定義書など各種ドキュメント作成</p>
                   <p class="card-caption-info">・カスタマイズファイル作成（javascript）</p>
