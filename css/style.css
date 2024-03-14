@@ -258,6 +258,7 @@ ul, li {
 
 #works .card-caption-info {
   font-size: 12px;
+  text-align: left;
 }
 
 #works .card-caption-url {
