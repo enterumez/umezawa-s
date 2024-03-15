@@ -613,19 +613,20 @@ ul, li {
     margin-bottom: 5px;
   }
 @media screen and (min-width: 600px) {
-    .profile img {
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        object-fit: cover;
-    }
+.profile img {
+  /* border-radius: 50%; 
+  border: 4px solid GREEN; */
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    object-fit: cover; /* ADD */
+ }
 
-    /* .profile img の border-radius を上書き */
-    .profile img {
-        border-radius: 0; /* もしくは必要な角度に調整 */
-    }
+.profile img {
+  border-radius: 50%;
+}
 }
 .contact-img{
   border-radius: 50%;
