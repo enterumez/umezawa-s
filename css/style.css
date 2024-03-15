@@ -623,6 +623,9 @@ ul, li {
     -webkit-border-radius: 50%;
     object-fit: cover; /* ADD */
  }}
+  .profile img {
+  border-radius: 50%;
+}
 }
 .contact-img{
   border-radius: 50%;
