@@ -23,6 +23,7 @@
   
 </head>
   <style>
+@media screen and (min-width: 600px) {
     .field {
   display: flex;
   justify-content: center;
@@ -32,13 +33,13 @@
   margin-right: 50px;
 }
     .futsal2 {
-  margin-top: 30px;      
+  margin-top: 60px;      
 }
 /* 最後の子要素にはマージンを適用しないため、margin-rightを0に設定 */
 .child:last-child {
   margin-right: 0;
 }
-
+}
 @media screen and (max-width: 600px) {
     .field {
         flex-direction: column; /* 要素を縦に並べる */
